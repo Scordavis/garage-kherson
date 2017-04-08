@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Магазин автозапчастей &ldquo;Гараж&rdquo;</title>
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/img/favs/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favs/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/favs/manifest.json">
+    <link rel="mask-icon" href="/img/favs/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favs/favicon.ico">
+    <meta name="msapplication-TileColor" content="#d8db20">
+    <meta name="msapplication-TileImage" content="/img/favs/mstile-144x144.png">
+    <meta name="msapplication-config" content="/img/favs/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--end favicon-->
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--    animate style-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <!--    owl carousel styles-->
+    <!--
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+-->
+    <!--slick carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+    <!--    bootstrap-lightbox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css" />
+    <!--   scor styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <nav class="navbar navbar-default scor-navbar">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed-nav" aria-expanded="false"> <span class="sr-only">Свернутая навигация</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand navbar-left logo" href="#"> <img class="img-responsive" src="img/logo-main.png" alt="">
+                    <p>авто запчасти</p>
+                </a>
+            </div>
+            <!-- //.navbar-header -->
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="collapsed-nav">
+                <ul class="nav scor-navbar-center">
+                    <li><a href="#company">Компания</a></li>
+                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Продукция<span class="caret"></span></a>
+                        <ul class="dropdown-menu scor-dropdown">
+                            <li><a href="#autoparts">Автозапчасти</a></li>
+                            <li><a href="#accumulators">Акб</a></li>
+                            <li><a href="#oils">Масла</a></li>
+                            <li><a href="#tires">Шины</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#sto">Сто</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                    <li class="nav navbar-nav navbar-right phone">(099) 789-45-45<span>вт-вс с 9<sup>00</sup> до 16<sup>00</sup></span></li>
+                </ul>
+                <!--                <p class="nav navbar-nav navbar-right col-md-3 phone">(099) 789-45-45<span>вт-вс с 9<sup>00</sup> до 16<sup>00</sup></span></p>-->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- //.scor-navbar -->
+    <!--.first screen-->
+    <div class="first-screen">
+        <div class="slider-container">
+            <div class="slider-control left inactive"></div>
+            <div class="slider-control right"></div>
+            <ul class="slider-pagi"></ul>
+            <div class="slider">
+                <div class="slide slide-0 active">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 500,0 400,405 0,405" /> </svg>
+                        <div class="container">
+                            <section class="slide__text">
+                                <h2 class="slide__text-heading">Только оригинальные <br>и качественные запчасти</h2>
+                                <p class="slide__text-desc"></p> <a href="#" class="slide__text-link">Посмотреть товар</a> </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-1 ">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 500,0 400,405 0,405" /> </svg>
+                        <div class="container">
+                            <section class="slide__text">
+                                <h2 class="slide__text-heading">Постоянное обновление <br>и расширение склада</h2>
+                                <p class="slide__text-desc"></p> <a href="#" class="slide__text-link">Посмотреть товар</a> </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 500,0 400,405 0,405" /> </svg>
+                        <div class="container">
+                            <section class="slide__text">
+                                <h2 class="slide__text-heading">Разумные цены и индивидуальный подход</h2>
+                                <p class="slide__text-desc"></p> <a href="#" class="slide__text-link">Посмотреть товар</a> </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="slide__bg"></div>
+                    <div class="slide__content">
+                        <svg class="slide__overlay" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
+                            <path class="slide__overlay-path" d="M0,0 500,0 400,405 0,405" /> </svg>
+                        <div class="container">
+                            <section class="slide__text">
+                                <h2 class="slide__text-heading">Профессиональный подход  к каждому клиенту</h2>
+                                <p class="slide__text-desc"></p> <a href="#" class="slide__text-link">Посмотреть товар</a> </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //slider-container -->
+    </div>
+    <!-- //.first-screen -->
+    <!--.second screen-->
+    <div class="container-fluid second-screen">
+        <div class="container visible-lg visible-md move-feedback">
+            <div class="col-md-5 feedback-slider">
+                <div class="slick-item">
+                    <article class="slick-text">
+                        <h3>Имярек Никнеймович</h3>
+                        <p>Доставили оперативно, молодцы! Обслуживание в магазине очень проессиональное, вежливое. По глупости спутал вин-номера и выбрал не ту деталь. Заметил только дома в гараже, когда начал производить замену. В магазине поменяли без проблем. Да и ехать совсем недалеко, так что буду теперь по возможности тут отавариваться.</p>
+                    </article>
+                </div>
+                <div class="slick-item">
+                    <article class="slick-text">
+                        <h3>Некто Нектович</h3>
+                        <p>Доставили оперативно, молодцы! Обслуживание в магазине очень проессиональное, вежливое. По глупости спутал вин-номера и выбрал не ту деталь. Заметил только дома в гараже, когда начал производить замену. В магазине поменяли без проблем. Да и ехать совсем недалеко, так что буду теперь по возможности тут отавариваться.</p>
+                    </article>
+                </div>
+                <div class="slick-item">
+                    <article class="slick-text">
+                        <h3>Витек с Днепровского</h3>
+                        <p>Доставили оперативно, молодцы! Обслуживание в магазине очень проессиональное, вежливое. По глупости спутал вин-номера и выбрал не ту деталь. Заметил только дома в гараже, когда начал производить замену. В магазине поменяли без проблем. Да и ехать совсем недалеко, так что буду теперь по возможности тут отавариваться.</p>
+                    </article>
+                </div>
+                <div class="slick-item">
+                    <article class="slick-text">
+                        <h3>БаракОбама</h3>
+                        <p>Доставили оперативно, молодцы! Обслуживание в магазине очень проессиональное, вежливое. По глупости спутал вин-номера и выбрал не ту деталь. Заметил только дома в гараже, когда начал производить замену. В магазине поменяли без проблем. Да и ехать совсем недалеко, так что буду теперь по возможности тут отавариваться.</p>
+                    </article>
+                </div>
+            </div>
+            <!-- //.feedback-slider -->
+        </div>
+        <!-- //.move-feedback -->
+        <section class="container about-block" id="company">
+            <h2 class="section-heading"><span>З</span>а что выбирают нас</h2>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 popup-choose" id="choose-body1"> <i class="garage-guaranty"></i>
+                    <p>Все бренды автозапчастей нашего ассортимента являются сертифицированными в Украине, на них распространяется гарантия производителя (при соблюдении правил установки и эксплуатации автомобиля).</p>
+                </div>
+                <div class="col-md-8 col-md-offset-2 popup-choose" id="choose-body2"> <i class="garage-chat"></i>
+                    <p>Все наши менеджеры проходят постоянное повышение квалификации. Они безошибочно подберут запчасти на ваш автомобиль.</p>
+                </div>
+                <div class="col-md-8 col-md-offset-2 popup-choose" id="choose-body3"> <i class="garage-stock"></i>
+                    <p>У нас есть собственные склады для хранения автозапчастей. Вы сможете убедиться в этом, увидев широкий выбор продукции.</p>
+                </div>
+                <div class="col-md-8 col-md-offset-2 popup-choose" id="choose-body4"> <i class="garage-like"></i>
+                    <p>Мы всегда разрабатываем и проводим акции при покупке товара в сети магазинов "Гараж", наши бонусы и цены приятно удивят вас.</p>
+                </div>
+                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in"  data-aos-duration="500" id="ico1"> <i class="about-icon garage-guaranty"></i>
+                    <p>гарантия на автозапчасти</p>
+                    <div class="popup-choose "></div>
+                </div>
+                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500" id="ico2"> <i class="about-icon garage-chat"></i>
+                    <p>консультация менеджеров</p>
+                    <!--                    <div class="popup-choose "></div>--></div>
+                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="500" id="ico3"> <i class="about-icon garage-stock"></i>
+                    <p>свои складские помещения</p>
+                    <!--                    <div class="popup-choose "></div>--></div>
+                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="500" id="ico4"> <i class="about-icon garage-like"></i>
+                    <p>выгодная цена</p>
+                    <!--                    <div class="popup-choose "></div>--></div>
+            </div>
+        </section>
+        <!-- //.about-block -->
+        <main>
+            <section class="container about-content">
+                <h2><span>О</span> нас</h2>
+                <p>Компания "Гараж" работает на рынке автозапчастей уже более 9 лет и успела завоевать доверие среди потребителей. На протяжении этих лет компания стремительно росла и развивалась. Мы постоянно находимся в поиске новых областей применения наших знаний и опыта, чтобы максимально удовлетворить потребности внутреннего рынка.</p>
+                <p>Наши сотрудники имеют большой опыт работы с клиентами. Обращаясь к нам, Вы получаете знания и умения самых лучших специалистов, не переплачивая за громкое имя фирмы.</p>
+                <p>Основным видом деятельности компании является продажа автозапчастей, автомасел и автохимии. Наши менеджеры всегда готовы помочь покупателям выбрать нужный товар. Ассортимент автозапчастей компании превышает более (12000) наименований(позиций).</p>
+            </section>
+            <article class="container congrats">
+                <div class="row">
+                    <div class="col-md-1 big-quotes"></div>
+                    <div class="col-md-10">
+                        <p>Мы постоянно отслеживаем все новинки на рынке автозапчастей и стараемся предложить их нашим клиентам по приемлемой цене.
+                            <br>Компания <span>"Гараж"</span> оправдает Ваше доверие.</p>
+                        <hr> </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </article>
+            <!-- //.congrats -->
+        </main>
+    </div>
+    <!-- //.second-screen -->
+    <!--.third screen-->
+    <div class="container-fluid third-screen">
+        <section class="container catalog-block">
+            <h2 class="section-heading"><span>П</span>родукция</h2>
+            <div class="scor-tab-block">
+                <!-- Nav tabs -->
+                <div class="row main-row">
+                    <ul class="nav nav-tabs scor-nav-tabs" role="tablist">
+                        <li role="presentation" class="col-xs-6 col-md-3 scor-tab-list"><a href="#oil" class="noscroll" aria-controls="oil" role="tab" data-toggle="tab" id="oils">масла</a></li>
+                        <li role="presentation" class="col-xs-6 col-md-3 scor-tab-list active"><a href="#car-recharges" class="noscroll" aria-controls="car-recharges" role="tab" data-toggle="tab" id="accumulators">Акб</a></li>
+                        <li role="presentation" class="col-xs-6 col-md-3 scor-tab-list"><a href="#autodetails" class="noscroll" aria-controls="autodetails" role="tab" data-toggle="tab" id="autoparts">автозапчасти</a></li>
+                        <li role="presentation" class="col-xs-6 col-md-3 scor-tab-list"><a href="#wheels" class="noscroll" aria-controls="wheels" role="tab" data-toggle="tab" id="tires">шины</a></li>
+                    </ul>
+                    <!--// end main four btn-->
+                    <!-- Whole Tab panes content -->
+                    <div class="tab-content">
+                        <!--                       first tab content-->
+                        <div role="tabpanel" class="tab-pane active" id="car-recharges">
+                            <ul id="scorinnertabs" class="nav nav-tabs nav-stacked scor-nav-tabs-inner">
+                                <li><a href="#akb-topla" data-toggle="tab">Topla</a></li>
+                                <li><a href="#akb-tab" data-toggle="tab">TAB</a></li>
+                                <li><a href="#akb-max" data-toggle="tab">4MAX</a></li>
+                                <li class="active"><a href="#akb-vesna" data-toggle="tab">Vesna</a></li>
+                                <li><a href="#akb-zavod" data-toggle="tab">Завод АКБ</a></li>
+                                <li><a href="#akb-inci" data-toggle="tab">INCI aku</a></li>
+                                <li><a href="#akb-bosh" data-toggle="tab">Bosch</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content scor-tab-inner-content">
+                                <div class="tab-pane scor-tab-inner-pane fade" id="akb-topla">
+                                    <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness ook real.</p>
+                                </div>
+                                <div class="tab-pane scor-tab-inner-pane fade" id="akb-topltab">
+                                    <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy samptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                                </div>
+                                <div class="tab-pane scor-tab-inner-pane fade" id="akb-max">
+                                    <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness ook real.</p>
+                                </div>
+                                <!--start DIRECTION section 1 of 4-->
+                                <div class="tab-pane scor-tab-inner-pane fade in active" id="akb-vesna">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2"><img src="img/product/vesna-prem.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10">
+                                                <h3>Vesna Premium</h3>
+                                                <p>Изготовлена по Са/Са экспандерной (просечно-растяжной) технологии, предназначена для всех типов транспортных средств. Vesna Premium обеспечивает наибольшую мощность при холодном пуске двигателя и надежность. </p>
+                                            </div>
+                                            <div class="col-md-12 character">
+                                                <button class="character-btn" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2"><img src="img/product/vesna-power.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10">
+                                                <h3>Vesna Power</h3>
+                                                <p>Изготовлена по Са/Са экспандерной (просечно-растяжной) технологии, предназначена для всех типов транспортных средств. Vesna Premium обеспечивает наибольшую мощность при холодном пуске двигателя и надежность. </p>
+                                            </div>
+                                            <div class="col-md-12 character">
+                                                <button class="character-btn" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2"><img src="img/product/vesna-power-truck.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10">
+                                                <h3>Vesna Power Truck</h3>
+                                                <p>Изготовлена с изпользованием сурьмянисто-кальциевой просечно-растяжной технологии.</p>
+                                            </div>
+                                            <div class="col-md-12 character">
+                                                <button class="character-btn" type="button" data-toggle="modal" data-target="#modal-character-acc-3" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section 1 of 4-->
+                            </div>
+                        </div>
+                        <!--// end first content-->
+                        <!--second tab content-->
+                        <div role="tabpanel" class="tab-pane" id="oil"> 2222222222222222222222222 </div>
+                        <!--// endsecond tab content-->
+                        <!--                        third tab content-->
+                        <div role="tabpanel" class="tab-pane" id="autodetails"> 33333333333333333333333333 </div>
+                        <!--                        fourth tab content-->
+                        <div role="tabpanel" class="tab-pane" id="wheels"> 4444444444444444444 </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--.catalog-block-->
+    </div>
+    <!--  //.third-screen-->
+    <!--fourth-screen-->
+    <div class="container-fluid fourth-screen">
+        <section class="container delivery-block">
+            <h2 class="section-heading heading-lighten"><span>Д</span>оставка</h2>
+            <article class="col-md-10 col-md-offset-1 delivery-article">
+                <p>При покупке товара на сумму свыше <span>500</span> гривен
+                    <br> - бесплатная доставка&#42;</p>
+            </article>
+            <div class="col-xs-4 col-xs-offset-1 divider-delivery">
+                <hr> </div>
+            <div class="col-xs-2 icon-delivery"><i class="garage-delivery"></i></div>
+            <div class="col-xs-4 divider-delivery">
+                <hr> </div>
+            <div class="col-md-4 col-md-offset-7 clarification">
+                <p>&#42;График доставки уточняйте у менеджера. Доставка осуществляется в пределах
+                    <br>транспортной доступности &#40;15км&#41;. </p>
+            </div>
+        </section>
+        <div class="bg-delivery"></div>
+    </div>
+    <!--//.fourth-screen-->
+    <!--fifth-screen gallery STO-->
+    <div class="container-fluid fifth-screen" id="sto">
+        <section class="container gallery-sto">
+            <h2 class="section-heading"><span>С</span>то фирмы &laquo;гараж&raquo;</h2>
+            <h4 class="gallery-description"><span>Ф</span>ото работ в нашем СТО</h4>
+            <div class="row galery-content">
+                <div class="col-xs-12 col-sm-6 col-md-3 gallery-thumb">
+                    <a href="img/galery/galery-fullsize-1.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="заголовок фото-1"><img src="img/galery/galery-thumb-1.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="title-1"><img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 gallery-thumb">
+                    <a href="img/galery/galery-fullsize-2.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="заголовок фото-2"><img src="img/galery/galery-thumb-2.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="title-2"><img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 gallery-thumb">
+                    <a href="img/galery/galery-fullsize-3.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="заголовок фото-3"><img src="img/galery/galery-thumb-3.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="title-3"><img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 gallery-thumb">
+                    <a href="img/galery/galery-fullsize-4.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="заголовок фото-4"><img src="img/galery/galery-thumb-4.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="title4"><img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-md-8 col-md-offset-2 galery-phone">
+                <p>Записаться на СТО можно по телефону <span>099-154-67-89</span></p>
+                <hr id="contacts">
+            </div>
+        </section>
+    </div>
+    <!--.conacts-block-->
+    <section class="container contact-block">
+        <div class="col-md-5 contact-content">
+            <h3 class="col-md-11 col-md-offset-2">Наши контакты</h3>
+            <div class="adress-row">
+               <i class="garage-marker col-md-2"></i><p class="col-sm-10">Херсон, Николаевское шоссе, Николаевское шоссе, 5-й км.</p>
+            </div>
+            <div class="adress-row">
+                <a href="mailto:garage-kherson@gmail.com" class="mail-link"><i class="garage-mail col-md-2"></i><p class="col-sm-10">garage-kherson@gmail.com</p></a>
+            </div>
+            <div class="adress-row">
+                <i class="garage-phone col-md-2"></i><p class="col-sm-10">099-154-67-89, 063-154-67-89</p>
+            </div>
+            <div class="adress-row">
+                <i class="garage-clock-fat col-md-2"></i><p class="col-sm-10">Вт-Вс, с 9<sup>00</sup> до 16<sup>00</sup></p>
+            </div>
+        </div>
+    </section>
+    <!--/.conacts-block-->
+    <!--.scor-map-->
+    <div class="container-fluid scor-map">
+        <div class="map-wrapper">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AWQgHcQAo74FtjVrPquwXk5KEJcgxzGd_&amp;width=100%25&amp;height=596&amp;lang=ru_UA&amp;scroll=true"></script>
+        </div>
+        <!--/.map-wrapper-->
+    </div>
+    <!--/.scor-map-->
+    <!--    .team-block-->
+    <div class="container-fluid team-block">
+        <section class="container team-content">
+            <h2 class="section-heading heading-lighten"><span>Н</span>аша команда</h2>
+            <div class="container team-slider">
+                <div class="col-md-4">
+                    <img src="img/team/tm1.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Хорошев<br>Александр</h3>
+                    <p class="teamer-seat">Старший менеджер</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/team/tm2.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Синолуп<br>Владимир</h3>
+                    <p class="teamer-seat">Начальник отдела продаж</p></div>
+                <div class="col-md-4">
+                    <img src="img/team/tm3.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Бабич<br>Виталий</h3>
+                    <p class="teamer-seat">Директор по развитию</p></div>
+                <div class="col-md-4">
+                    <img src="img/team/tm4.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Романович<br>Роман</h3>
+                    <p class="teamer-seat">Старший менеджер</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/team/tm5.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Рыженко<br>Денис</h3>
+                    <p class="teamer-seat">Менеджер по продажам</p></div>
+                <div class="col-md-4">
+                    <img src="img/team/tm6.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Сибилев<br>Александр </h3>
+                    <p class="teamer-seat">Оператор складских территорий</p></div>
+                <div class="col-md-4">
+                    <img src="img/team/tm7.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Куликов<br>Марк</h3>
+                    <p class="teamer-seat">Старший аналитик отдела закупок</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="img/team/tm8.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Письменный<br>Олег</h3>
+                    <p class="teamer-seat">Оператор складских территорий</p></div>
+                <div class="col-md-4">
+                    <img src="img/team/tm9.jpg" alt="" class="img-responsive img-circle center-block">
+                    <h3 class="teamer-name">Яковец<br>Владислав</h3>
+                    <p class="teamer-seat">Менеджер по продажам</p></div>
+            </div>
+        </section>
+        <div class="bg-overlay"></div>
+    </div>
+    <!--    /.team-block-->
+    <footer class="container-fluid">
+        <div class="container footer-content">
+            <div class="col-md-4 footer-logo-block">
+                <img src="img/logo-bottom.png" alt="" class="img-responsive">
+                <p>авто запчасти</p>
+            </div>
+            <div class="col-md-4">
+                <p>Херсон, Николаевское шоссе,<br>Николаевское шоссе, 5-й км.</p>
+                <p>тел. 099-154-67-89<br>063-154-67-89</p>
+            </div>
+            <div class="col-md-4 footer-legal">
+                <p class="legal-link" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">Правовая информация</p>
+                <a class="link-dev" href="">Сайт разработан<br><span>Scor Davis</span></a>
+            </div>
+        </div>
+    </footer>
+    <!-- modals -->
+    <!-- notify modals -->
+    <!-- garanty -->
+    <!--characteristic modals-->
+    <!--car-recharges-->
+    <!--modal-character-acc-1-->
+    <div class="modal fade" id="modal-character-acc-1" tabindex="-1" role="dialog">
+        <div class="modal-dialog card-product-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-card-heading">Vesna Premium</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">закрыть</span></button>
+                </div>
+                <div class="modal-body">
+                    <table class="card-product-table">
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//modal-character-acc-1-->
+    <!--modal-character-acc-2-->
+    <div class="modal fade" id="modal-character-acc-2" tabindex="-1" role="dialog">
+        <div class="modal-dialog card-product-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-card-heading">Vesna Power</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">закрыть</span></button>
+                </div>
+                <div class="modal-body">
+                    <table class="card-product-table">
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//modal-character-acc-2-->
+    <!--modal-character-acc-3-->
+    <div class="modal fade" id="modal-character-acc-3" tabindex="-1" role="dialog">
+        <div class="modal-dialog card-product-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-card-heading">Vesna Power Truck</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">закрыть</span></button>
+                </div>
+                <div class="modal-body">
+                    <table class="card-product-table">
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                        <tr>
+                            <td>some text</td>
+                            <td>some text</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//modal-character-acc-3-->
+    <!--//car-recharges-->
+    <!-- //.modal -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--    iclude AOS-->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <!--   init AOS-->
+    
+   <script>
+    AOS.init();
+  </script>
+
+    <script src="js/hovertips.js"></script>
+    <!--anim slider-->
+    <script src="js/slider.js"></script>
+    <!--    slick slider feedback-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <!--   init feedback slick slider-->
+    <script>
+        $(document).ready(function () {
+            $('.feedback-slider').slick();
+        });
+    </script>
+<!--    init team slick slider-->
+    <script>
+        $('.team-slider').slick({
+      infinite: true,
+      dots: false,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    });
+    </script>
+    <!--   Bootstrap js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--    bootstrap tabCollapse js-->
+    <script src="js/bootstrap-tabcollapse.js"></script>
+    <!--    init bootstrap tabCollapse js-->
+    <script type="text/javascript">
+        $('#scorinnertabs').tabCollapse({
+            tabsClass: 'hidden-xs'
+            , accordionClass: 'visible-xs'
+        });
+    </script>
+    <!--    include bootstrap lightbox script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+    <!--init bootstrap lightbox script-->
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({
+                alwaysShowClose: true
+            });
+        });
+    </script>
+<!--    scroller script-->
+<script>
+    $('a[href*="#"]:not([href="#"]):not(.noscroll)').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+    </script>
+</body>
+
+</html>
