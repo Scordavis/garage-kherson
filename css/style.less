@@ -20,6 +20,7 @@
 
 /*-------------------------------------------*/
 
+//@media (max-width: 1199px) {}
 
 /*------------------------------------------*/
 
@@ -229,7 +230,6 @@ p {
 
 @slider-height: 75vh;
 .first-screen {
-    background-color: @maingreen;
     height: 75vh;
     min-height: 690px;
     overflow: hidden;
@@ -361,6 +361,7 @@ p {
         width: 100%;
         height: 100%;
         background-size: cover;
+        background-position: center;
         will-change: transform;
     }
     .slide .slide__overlay-path {
@@ -447,6 +448,11 @@ p {
         -webkit-transform: translate3d(-20%, 0, 0);
         transform: translate3d(-20%, 0, 0);
         opacity: 0;
+    }
+    @media (max-width: 1199px) {
+        .slide__overlay {
+            left: -30%;
+        }
     }
     @media (max-width: 991px) {
         .slide__overlay {
@@ -628,6 +634,9 @@ p {
                         font-weight: 300;
                         font-style: italic;
                         padding-bottom: 20px;
+                        @media (max-width: 1199px) {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -636,9 +645,17 @@ p {
     .about-block {
         position: relative;
         margin-top: 148px;
+        @media (max-width: 1199px) {
+            .section-heading {
+                margin: 110px auto;
+            }
+        }
         .row {
             position: relative;
             margin-bottom: 100px;
+            @media (max-width: 1199px) {
+                margin-bottom: 0px;
+            }
             .popup-choose {
                 position: absolute;
                 min-height: 100px;
@@ -685,6 +702,10 @@ p {
             .scor-choose-block {
                 position: relative;
                 cursor: help;
+                margin-bottom: 0;
+                @media (max-width: 1199px) {
+                    margin-bottom: 60px;
+                }
                 &:before {
                     position: absolute;
                     right: 20px;
@@ -701,6 +722,9 @@ p {
                     color: @white;
                     background-color: @mainred;
                     transition: all .5s ease-in-out;
+                    @media (max-width: 1199px) {
+                        right: 100px;
+                    }
                 }
                 .about-icon {
                     position: relative;
@@ -1004,7 +1028,6 @@ p {
     .delivery-block {
         position: relative;
         z-index: 3;
-        
         .delivery-article {
             margin-bottom: 40px;
             p {
@@ -1040,10 +1063,10 @@ p {
         }
     }
 }
-.heading-lighten {
-            color: @white;
-        } //.heading-light
 
+.heading-lighten {
+    color: @white;
+} //.heading-light
 //.fourth-screen
 .fifth-screen {
     padding-bottom: 300px;
@@ -1079,6 +1102,10 @@ p {
                         top: 30%;
                         left: 36%;
                         transition: all 0.3s;
+                        @media (max-width: 1199px) {
+                            top: 27%;
+                            left: 34%;
+                        }
                     }
                     &:after {
                         display: block;
@@ -1183,14 +1210,15 @@ p {
             font-size: 2.571em;
             font-weight: 700;
             margin-top: 30px;
-            margin-bottom: 40px;;
+            margin-bottom: 40px;
+            ;
         }
         .adress-row {
             position: relative;
-            .mail-link{
+            .mail-link {
                 color: @maingreen;
-                &:hover{
-                    p{
+                &:hover {
+                    p {
                         text-decoration: underline;
                     }
                 }
@@ -1201,10 +1229,9 @@ p {
                 left: 8px;
                 top: -5px;
             }
-            .garage-marker{
+            .garage-marker {
                 top: 6px;
             }
-            
             p {
                 position: relative;
                 display: inline-block;
@@ -1221,8 +1248,9 @@ p {
     position: relative;
     .map-wrapper {}
 }
+
 //.scor-map
-.team-block{
+.team-block {
     position: relative;
     background-image: url(../img/bg-team.jpg);
     background-repeat: no-repeat;
@@ -1232,19 +1260,20 @@ p {
     padding-bottom: 90px;
     border-top: 26px solid @mainred;
     z-index: 1;
-    .team-content{
+    .team-content {
         position: relative;
-        z-index: 3;  
-        .team-slider{    //slider team
+        z-index: 3;
+        .team-slider {
+            //slider team
             color: @white;
             text-align: center;
-            .slick-arrow{
+            .slick-arrow {
                 height: 100%;
-                &.slick-prev{
-                width: fit-content;
+                &.slick-prev {
+                    width: fit-content;
                     z-index: 1;
-                        top: 32%;
-                    &:before{
+                    top: 32%;
+                    &:before {
                         display: block;
                         position: relative;
                         margin: 40px;
@@ -1256,20 +1285,21 @@ p {
                         color: @white;
                         transition: all .3s;
                     }
-                    &:hover{
-                        &:before{
+                    &:hover {
+                        &:before {
                             color: @mainred;
                         }
                     }
                 }
-                &.slick-next{
-                width: fit-content;
+                &.slick-next {
+                    width: fit-content;
                     z-index: 1;
-                        top: 32%;
-                    &:before{
+                    top: 32%;
+                    &:before {
                         display: block;
                         position: relative;
                         margin: 40px;
+                        right: -15px;
                         font-family: garage;
                         opacity: 1;
                         font-weight: 700;
@@ -1278,31 +1308,34 @@ p {
                         color: @white;
                         transition: all .3s;
                     }
-                    &:hover{
-                        &:before{
+                    &:hover {
+                        &:before {
                             color: @mainred;
                         }
                     }
                 }
             }
-            img{
+            img {
                 border: 2px solid @white;
             }
-            .teamer-name{
+            .teamer-name {
                 font-weight: 700;
                 letter-spacing: 2px;
                 font-size: 24px;
                 margin-top: 38px;
             }
-            .teamer-seat{
+            .teamer-seat {
                 width: 70%;
                 margin: auto;
                 font-size: 18px;
                 letter-spacing: 1px;
+                @media (max-width: 1199px) {
+                    width: 100%;
+                }
             }
         }
     }
-    .bg-overlay{
+    .bg-overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -1312,70 +1345,72 @@ p {
         z-index: 2;
     }
 }
+
 //.team-block
-footer{
+footer {
     min-height: 100px;
     padding-top: 35px;
     padding-bottom: 20px;
     background-color: @mainred;
     line-height: 22px;
-    .footer-content{
+    .footer-content {
         color: @white;
         letter-spacing: 1px;
         text-align: center;
-        p, a{
-        font-size: 16px;
+        p,
+        a {
+            font-size: 16px;
         }
-        .footer-logo-block{
-            p{
-              text-align: left; 
-        font-size: 18px; 
+        .footer-logo-block {
+            p {
+                text-align: left;
+                font-size: 18px;
             }
-        } 
-        .footer-legal{
+        }
+        .footer-legal {
             text-align: right;
-            .legal-link{
+            .legal-link {
                 width: fit-content;
                 float: right;
                 cursor: pointer;
                 border-bottom: 1px dashed @white;
                 transition: all .3s;
                 margin-bottom: 30px;
-                &:hover{
+                &:hover {
                     color: darken(@white, 10%);
                     opacity: .8;
                     border-bottom-color: transparent;
                 }
             }
-            .link-dev{
+            .link-dev {
                 float: right;
                 clear: both;
-                span{
+                span {
                     position: relative;
                     display: block;
                     width: fit-content;
                     float: right;
                     transform: translateY(0px);
                     transition: all .3s;
-                    &:before{
+                    &:before {
                         position: absolute;
                         left: 40%;
                         font-family: garage;
                         content: '\e00a';
-                        transform: translateY(0px) rotate(270deg); 
+                        transform: translateY(0px) rotate(270deg);
                         filter: opacity(0);
                         transition: all .3s;
                         transition-delay: 0s;
                         text-shadow: 2px 2px 22px @white;
                     }
                 }
-                &:hover{
-                    span{
+                &:hover {
+                    span {
                         transform: translateY(20px);
-                        &:before{
+                        &:before {
                             transform: translateY(-20px) rotate(0deg);
                             filter: opacity(1);
-                        transition-delay: .2s;
+                            transition-delay: .2s;
                         }
                     }
                 }
@@ -1383,7 +1418,9 @@ footer{
         }
     }
 }
+
 //footer
+
 /*--------------------------------------------------------------------*/
 
 
@@ -1397,7 +1434,7 @@ footer{
         .modal-header {
             .modal-card-heading {
                 margin: 0;
-                display: inline-block
+                display: inline-block;
             }
         }
         .modal-body {
@@ -1419,12 +1456,3 @@ footer{
         }
     }
 }
-
-
-/*--------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------------*/
