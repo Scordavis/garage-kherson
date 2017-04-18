@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Магазин автозапчастей &ldquo;Гараж&rdquo;</title>
+    <meta name="author" content="Vladimir Solomykin (Scor Davis)">
+    <title>Магазин автозапчастей "Гараж"</title>
     <!--favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favs/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/img/favs/favicon-32x32.png" sizes="32x32">
@@ -23,11 +24,7 @@
     <!--    animate style-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
-    <!--    owl carousel styles-->
-    <!--
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
--->
+ 
     <!--slick carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
@@ -44,14 +41,39 @@
 </head>
 
 <body>
+  
+<div class="hidden" itemscope itemtype="http://schema.org/AutomotiveBusiness">
+    <h3>
+        <span itemprop="name">Гараж</span>
+    </h3>
+    <span itemprop="description">Лучший магазин автозапчастей в Херсоне</span>
+    <br />
+    <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+    </span>
+    <span itemprop="streetAddress">Херсон, Николаевское шоссе, 5-й км. Авторынок</span>
+    <br />
+    <br />
+    <span itemprop="addressCountry">Украина</span>
+    <br />Phone:
+    <span itemprop="telephone">(050)-327-97-97, (095)-277-57-71, (097)-577-57-71</span>
+    <br />
+    <span itemprop="url">http://xn--80aaho2c.ks.ua</span>
+    <br />
+</div>
+   
+    <!--preloader-->
+    <div class="garage-loader">
+        <div class="garage-loader-inner"></div>
+    </div>
     <nav class="navbar navbar-default scor-navbar">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsed-nav" aria-expanded="false"> <span class="sr-only">Свернутая навигация</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                <a class="navbar-brand navbar-left logo" href="#"> <img class="img-responsive" src="img/logo-main.png" alt="">
+                <button type="button" class="col-xs-1 navbar-toggle collapsed garage-hamburger-menu" data-toggle="collapse" data-target="#collapsed-nav" aria-expanded="false"> <span class="sr-only">Свернутая навигация</span> <span></span> </button>
+                <a class="navbar-brand navbar-left logo col-lg-12 col-sm-12 col-xs-3" href="#"> <img class="img-responsive logo-img" src="img/logo-main.png" alt="">
                     <p>авто запчасти</p>
                 </a>
+                <p class="col-xs-6 center-block phone phone-xs visible-xs"><b>(050) 327-97-97</b><br> <b>(095) 277-57-71</b><br> <b>(097) 577-57-71</b><span><em>8<sup>00</sup> - 18<sup>00</sup> / </em>8<sup>00</sup> - 15<sup>00</sup></span></p>
             </div>
             <!-- //.navbar-header -->
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,9 +90,9 @@
                     </li>
                     <li><a href="#sto">Сто</a></li>
                     <li><a href="#contacts">Контакты</a></li>
-                    <li class="nav navbar-nav navbar-right phone hidden-sm">(099) 789-45-45<span>вт-вс с 9<sup>00</sup> до 16<sup>00</sup></span></li>
+                    <li class="nav navbar-nav navbar-right phone hidden-sm hidden-xs"><b>(050) 327-97-97</b> <b>(095) 277-57-71</b> <b>(097) 577-57-71</b><span><em>8<sup>00</sup> - 18<sup>00</sup> / </em>8<sup>00</sup> - 15<sup>00</sup></span></li>
                 </ul>
-                <p class="nav navbar-nav navbar-right col-sm-11 center-block  phone phone-sm visible-sm">(099) 789-45-45<span>вт-вс с 9<sup>00</sup> до 16<sup>00</sup></span></p>
+                <p class="nav navbar-nav navbar-right col-sm-12 center-block  phone phone-sm visible-sm"><b>(050) 327-97-97</b> &nbsp; &#124; &nbsp;<b>(095) 277-57-71</b>&nbsp; &#124; &nbsp;<b>(097) 577-57-71</b></p><p class="visible-sm"><span><em>8<sup>00</sup> - 18<sup>00</sup> / </em>8<sup>00</sup> - 15<sup>00</sup></span></p>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -88,11 +110,11 @@
                     <div class="slide__bg"></div>
                     <div class="slide__content">
                         <svg class="slide__overlay" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
-                            <path class="slide__overlay-path" d="M0,0 500,0 400,405 0,405" /> </svg>
+                            <path class="slide__overlay-path visible-lg visible-md-path" d="M0,0 500,0 400,405 0,405" /> </svg>
                         <div class="container">
                             <section class="slide__text">
                                 <h2 class="slide__text-heading">Только оригинальные <br>и качественные запчасти</h2>
-                                <p class="slide__text-desc"></p> <a href="#" class="slide__text-link">Посмотреть товар</a> </section>
+                                <p class="slide__text-desc"></p> <a href="#produkcija" class="slide__text-link">Посмотреть товар</a> </section>
                         </div>
                     </div>
                 </div>
@@ -100,35 +122,35 @@
                     <div class="slide__bg"></div>
                     <div class="slide__content">
                         <svg class="slide__overlay" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
-                            <path class="slide__overlay-path" d="M0,0 500,0 400,405 0,405" /> </svg>
+                            <path class="slide__overlay-path visible-lg visible-md-path" d="M0,0 500,0 400,405 0,405" /> </svg>
                         <div class="container">
                             <section class="slide__text">
                                 <h2 class="slide__text-heading">Постоянное обновление <br>и расширение склада</h2>
-                                <p class="slide__text-desc"></p> <a href="#" class="slide__text-link">Посмотреть товар</a> </section>
+                                <p class="slide__text-desc"></p> <a href="#produkcija" class="slide__text-link">Посмотреть товар</a> </section>
                         </div>
                     </div>
                 </div>
                 <div class="slide slide-2">
                     <div class="slide__bg"></div>
                     <div class="slide__content">
-                        <svg class="slide__overlay" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
-                            <path class="slide__overlay-path" d="M0,0 500,0 400,405 0,405" /> </svg>
+                        <svg class="slide__overlay visible-lg visible-md" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
+                            <path class="slide__overlay-path visible-lg visible-md-path" d="M0,0 500,0 400,405 0,405" /> </svg>
                         <div class="container">
                             <section class="slide__text">
                                 <h2 class="slide__text-heading">Разумные цены и индивидуальный подход</h2>
-                                <p class="slide__text-desc"></p> <a href="#" class="slide__text-link">Посмотреть товар</a> </section>
+                                <p class="slide__text-desc"></p> <a href="#produkcija" class="slide__text-link">Посмотреть товар</a> </section>
                         </div>
                     </div>
                 </div>
                 <div class="slide slide-3">
                     <div class="slide__bg"></div>
                     <div class="slide__content">
-                        <svg class="slide__overlay" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
-                            <path class="slide__overlay-path" d="M0,0 500,0 400,405 0,405" /> </svg>
+                        <svg class="slide__overlay visible-lg visible-md" viewbox="0 0 720 405" preserveaspectratio="xMaxYMax slice">
+                            <path class="slide__overlay-path visible-lg visible-md-path" d="M0,0 550,0 450,405 0,405" /> </svg>
                         <div class="container">
                             <section class="slide__text">
-                                <h2 class="slide__text-heading">Профессиональный подход  к каждому клиенту</h2>
-                                <p class="slide__text-desc"></p> <a href="#" class="slide__text-link">Посмотреть товар</a> </section>
+                                <h2 class="slide__text-heading">Профессиональный подход к каждому клиенту</h2>
+                                <p class="slide__text-desc"></p> <a href="#produkcija" class="slide__text-link">Посмотреть товар</a> </section>
                         </div>
                     </div>
                 </div>
@@ -138,7 +160,7 @@
     </div>
     <!-- //.first-screen -->
     <!--.second screen-->
-    <div class="container-fluid second-screen">
+    <div class="container-fluid second-screen" >
         <div class="container visible-lg visible-md move-feedback">
             <div class="col-md-5 feedback-slider">
                 <div class="slick-item">
@@ -172,31 +194,30 @@
         <section class="container about-block" id="company">
             <h2 class="section-heading"><span>З</span>а что выбирают нас</h2>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 popup-choose" id="choose-body1"> <i class="garage-guaranty"></i>
+                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-duration="300" id="ico1"> <i class="about-icon garage-guaranty"></i>
+                    <p>гарантия на автозапчасти</p>
+                </div>
+                <div class="col-md-8 col-md-offset-2 col-sm-11 col-xs-12 popup-choose" id="choose-body1"> <i class="garage-guaranty"></i>
                     <p>Все бренды автозапчастей нашего ассортимента являются сертифицированными в Украине, на них распространяется гарантия производителя (при соблюдении правил установки и эксплуатации автомобиля).</p>
                 </div>
-                <div class="col-md-8 col-md-offset-2 popup-choose" id="choose-body2"> <i class="garage-chat"></i>
-                    <p>Все наши менеджеры проходят постоянное повышение квалификации. Они безошибочно подберут запчасти на ваш автомобиль.</p>
-                </div>
-                <div class="col-md-8 col-md-offset-2 popup-choose" id="choose-body3"> <i class="garage-stock"></i>
-                    <p>У нас есть собственные склады для хранения автозапчастей. Вы сможете убедиться в этом, увидев широкий выбор продукции.</p>
-                </div>
-                <div class="col-md-8 col-md-offset-2 popup-choose" id="choose-body4"> <i class="garage-like"></i>
-                    <p>Мы всегда разрабатываем и проводим акции при покупке товара в сети магазинов "Гараж", наши бонусы и цены приятно удивят вас.</p>
-                </div>
-                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-duration="500" id="ico1"> <i class="about-icon garage-guaranty"></i>
-                    <p>гарантия на автозапчасти</p>
-                    <div class="popup-choose "></div>
-                </div>
-                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500" id="ico2"> <i class="about-icon garage-chat"></i>
+                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="300" id="ico2"> <i class="about-icon garage-chat"></i>
                     <p>консультация менеджеров</p>
                     <!--                    <div class="popup-choose "></div>--></div>
-                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="500" id="ico3"> <i class="about-icon garage-stock"></i>
+                <div class="col-md-8 col-md-offset-2 col-sm-11 col-xs-12 popup-choose" id="choose-body2"> <i class="garage-chat"></i>
+                    <p>Все наши менеджеры проходят постоянное повышение квалификации. Они безошибочно подберут запчасти на ваш автомобиль.</p>
+                </div>
+                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="700" data-aos-duration="300" id="ico3"> <i class="about-icon garage-stock"></i>
                     <p>свои складские помещения</p>
                     <!--                    <div class="popup-choose "></div>--></div>
-                <div class="scor-choose-block col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="1500" data-aos-duration="500" id="ico4"> <i class="about-icon garage-like"></i>
+                <div class="col-md-8 col-md-offset-2 col-sm-11 col-xs-12 popup-choose" id="choose-body3"> <i class="garage-stock"></i>
+                    <p>У нас есть собственные склады для хранения автозапчастей. Вы сможете убедиться в этом, увидев широкий выбор продукции.</p>
+                </div>
+                <div class="scor-choose-block col-sm-6 col-sm-11 col-lg-3" data-aos="zoom-in" data-aos-delay="1100" data-aos-duration="300" id="ico4"> <i class="about-icon garage-like"></i>
                     <p>выгодная цена</p>
                     <!--                    <div class="popup-choose "></div>--></div>
+                <div class="col-md-8 col-md-offset-2 col-sm-11 col-xs-12 popup-choose" id="choose-body4"> <i class="garage-like"></i>
+                    <p>Мы всегда разрабатываем и проводим акции при покупке товара в сети магазинов "Гараж", наши бонусы и цены приятно удивят вас.</p>
+                </div>
             </div>
         </section>
         <!-- //.about-block -->
@@ -209,12 +230,12 @@
             </section>
             <article class="container congrats">
                 <div class="row">
-                    <div class="col-md-1 big-quotes"></div>
-                    <div class="col-md-10">
+                    <div class="col-md-1 col-sm-12 big-quotes"></div>
+                    <div class="col-md-10 col-sm-12 ">
                         <p>Мы постоянно отслеживаем все новинки на рынке автозапчастей и стараемся предложить их нашим клиентам по приемлемой цене.
                             <br>Компания <span>"Гараж"</span> оправдает Ваше доверие.</p>
                         <hr> </div>
-                    <div class="col-md-1"></div>
+                    <div class="col-md-1 hidden-sm"></div>
                 </div>
             </article>
             <!-- //.congrats -->
@@ -222,7 +243,7 @@
     </div>
     <!-- //.second-screen -->
     <!--.third screen-->
-    <div class="container-fluid third-screen">
+    <div class="container-fluid third-screen" id="produkcija">
         <section class="container catalog-block">
             <h2 class="section-heading"><span>П</span>родукция</h2>
             <div class="scor-tab-block">
@@ -237,39 +258,30 @@
                     <!--// end main four btn-->
                     <!-- Whole Tab panes content -->
                     <div class="tab-content">
-                        <!--                       first tab content-->
-                        <div role="tabpanel" class="tab-pane active" id="car-recharges">
-                            <ul id="scorinnertabs" class="nav nav-tabs nav-stacked scor-nav-tabs-inner">
-                                <li><a href="#akb-topla" data-toggle="tab">Topla</a></li>
-                                <li><a href="#akb-tab" data-toggle="tab">TAB</a></li>
-                                <li><a href="#akb-max" data-toggle="tab">4MAX</a></li>
-                                <li class="active"><a href="#akb-vesna" data-toggle="tab">Vesna</a></li>
-                                <li><a href="#akb-zavod" data-toggle="tab">Завод АКБ</a></li>
-                                <li><a href="#akb-inci" data-toggle="tab">INCI aku</a></li>
-                                <li><a href="#akb-bosh" data-toggle="tab">Bosch</a></li>
+                        <!-- AKB tab content-->
+                        <div role="tabpanel" class="tab-pane fade in active" id="car-recharges">
+                            <ul id="tab-akb" class="nav nav-tabs nav-stacked scor-nav-tabs-inner">
+                                <li><a href="#akb-topla" class="noscroll" data-toggle="tab">Topla</a></li>
+                                <li><a href="#akb-tab" class="noscroll" data-toggle="tab">TAB</a></li>
+                                <li class="active"><a href="#akb-max" class="noscroll" data-toggle="tab">4MAX</a></li>
+                                <li><a href="#akb-vesna" class="noscroll active" data-toggle="tab">Vesna</a></li>
+                                <li><a href="#akb-zavod" class="noscroll" data-toggle="tab">Завод АКБ</a></li>
+                                <li><a href="#akb-inci" class="noscroll" data-toggle="tab">INCI aku</a></li>
+                                <li><a href="#akb-bosch" class="noscroll" data-toggle="tab">Bosch</a></li>
                             </ul>
-                            <div id="myTabContent" class="tab-content scor-tab-inner-content">
-                                <div class="tab-pane scor-tab-inner-pane fade" id="akb-topla">
-                                    <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness ook real.</p>
-                                </div>
-                                <div class="tab-pane scor-tab-inner-pane fade" id="akb-topltab">
-                                    <p>Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy samptown. Pitchfork sustainable tofu synth chambray yr.</p>
-                                </div>
-                                <div class="tab-pane scor-tab-inner-pane fade" id="akb-max">
-                                    <p>Light Blue - is a next generation admin template based on the latest Metro design. There are few reasons we want to tell you, why we have created it: We didn't like the darkness ook real.</p>
-                                </div>
-                                <!--start DIRECTION section 1 of 4-->
-                                <div class="tab-pane scor-tab-inner-pane fade in active" id="akb-vesna">
+                            <div id="content-akb" class="tab-content scor-tab-inner-content">
+                                <!--start DIRECTION section akb-vesna-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="akb-vesna">
                                     <!--start card product-->
                                     <div class="product-card col-md-12">
                                         <div class="row">
-                                            <div class="product-img col-md-2"><img src="img/product/vesna-prem.jpg" alt="" class="center-block img-responsive"></div>
-                                            <div class="product-description col-md-10">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/vesna-prem.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
                                                 <h3>Vesna Premium</h3>
                                                 <p>Изготовлена по Са/Са экспандерной (просечно-растяжной) технологии, предназначена для всех типов транспортных средств. Vesna Premium обеспечивает наибольшую мощность при холодном пуске двигателя и надежность. </p>
                                             </div>
-                                            <div class="col-md-12 character">
-                                                <button class="character-btn" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
                                             </div>
                                         </div>
                                         <hr> </div>
@@ -277,13 +289,13 @@
                                     <!--start card product-->
                                     <div class="product-card col-md-12">
                                         <div class="row">
-                                            <div class="product-img col-md-2"><img src="img/product/vesna-power.jpg" alt="" class="center-block img-responsive"></div>
-                                            <div class="product-description col-md-10">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/vesna-power.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
                                                 <h3>Vesna Power</h3>
                                                 <p>Изготовлена по Са/Са экспандерной (просечно-растяжной) технологии, предназначена для всех типов транспортных средств. Vesna Premium обеспечивает наибольшую мощность при холодном пуске двигателя и надежность. </p>
                                             </div>
-                                            <div class="col-md-12 character">
-                                                <button class="character-btn" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
                                             </div>
                                         </div>
                                         <hr> </div>
@@ -291,29 +303,867 @@
                                     <!--start card product-->
                                     <div class="product-card col-md-12">
                                         <div class="row">
-                                            <div class="product-img col-md-2"><img src="img/product/vesna-power-truck.jpg" alt="" class="center-block img-responsive"></div>
-                                            <div class="product-description col-md-10">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/vesna-power-truck.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
                                                 <h3>Vesna Power Truck</h3>
                                                 <p>Изготовлена с изпользованием сурьмянисто-кальциевой просечно-растяжной технологии.</p>
                                             </div>
-                                            <div class="col-md-12 character">
-                                                <button class="character-btn" type="button" data-toggle="modal" data-target="#modal-character-acc-3" data-backdrop="true">характеристики</button>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-3" data-backdrop="true">характеристики</button>
                                             </div>
                                         </div>
                                         <hr> </div>
                                     <!--//end card product-->
                                 </div>
-                                <!--//end DIRECTION section 1 of 4-->
+                                <!--//end DIRECTION section akb-vesna-->
+                                <!--start DIRECTION section akb-topla-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="akb-topla">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/topla-enery.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Topla Energy</h3>
+                                                <p>Topla Energy высококлассная батарея, предназначенная для всех типов транспортных средств, изготовленная по Са/Са экспандерной (просечно-растяжной) технологии. Topla Energy обеспечивает наибольшую мощность при холодном пуске двигателя и исключительную надежность.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/top-jis.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Topla Top JIS</h3>
+                                                <p>Topla Top JIS технология, использующая последние инновации в производстве Са/Са батарей, которая обеспечивает наибольшую производительность при холодном пуске двигателя и превосходную, высокую мощность, необходимую для последних поколений автомобилей с высоким энергопотреблением. Крышка SMF дает полную защиту от пролива даже при переворачивании и совершенно не требует технического обслуживания в течение всего срока службы батареи.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/top-energy-truck.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Topla Energy Truck</h3>
+                                                <p>Topla Energy Truck батарея, предназначенная для всех типов транспортных средств, изготовленная по Са/Са экспандерной (просечно-растяжной) технологии. Topla Energy Truck обеспечивает наибольшую мощность при холодном пуске двигателя и исключительную надежность.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-3" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section akb-topla-->
+                                <!--start DIRECTION section akb-tab-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="akb-tab">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/tab-polar.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>TAB Polar</h3>
+                                                <p>TAB Polar батарея, предназначенная для автомобилей со стандартным уровнем электрооборудования, но с повышенным требованием к пусковым характеристикам, производительности и надежности.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/tab-magic.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>TAB Magic</h3>
+                                                <p>TAB Magic технология, использующая последние инновации в производстве Са/Са батарей, которая обеспечивает наибольшую производительность при холодном пуске двигателя и превосходную, высокую мощность, необходимую для последних поколений автомобилей с высоким энергопотреблением. Крышка SMF дает полную защиту от пролива даже при переворачивании и совершенно не требует технического обслуживания в течение всего срока службы батареи.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/tab-polar-truck.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>TAB Polar Truck</h3>
+                                                <p>TAB Polar Truck батарея предназначенная для автомобилей со стандартным уровнем электрооборудования, но с повышенным требованием к пусковым характеристикам, производительности и надежности. TAB Polar Truck - аккумулятор произведен с использованием сурьмянисто-кальциевой (Sb/Ca) просечно-растяжной технологии.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-3" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section akb-tab-->
+                                <!--start DIRECTION section akb-max-->
+                                <div class="tab-pane scor-tab-inner-pane fade in active" id="akb-max">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/max-6ct.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>4Max 6СТ</h3>
+                                                <p>Аккумуляторы 4Max - потенциал и энергия для Вашего автомобиля. Если Вы цените комфорт и безопасность, то эти аккумуляторы наилучший выбор. Особенностью аккумуляторов 4Max являются оптимальная конструкция пластин и специальная формула активной массы. Изготовленные по технологии "Ca/Ca" пластины обеспечивают стойкость к коррозии и прочность, а также увеличенные значения пусковых токов. Страна-производитель - Польша. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/max-6ct-100-aze.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>4Max 6СТ-100 АзЕ</h3>
+                                                <p>Аккумуляторы 4Max - потенциал и энергия для Вашего автомобиля. Если Вы цените комфорт и безопасность, то эти аккумуляторы наилучший выбор. Особенностью аккумуляторов 4Max являются оптимальная конструкция пластин и специальная формула активной массы. Изготовленные по технологии "Ca/Ca" пластины обеспечивают стойкость к коррозии и прочность, а также увеличенные значения пусковых токов. Страна-производитель - Польша. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section akb-max-->
+                                <!--start DIRECTION section akb-zavod-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="akb-zavod">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/autopart-galaxy-plus.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>GALAXY PLUS</h3>
+                                                <p>Оптимальная конструкция пластины и специальная формула активной массы обесчпечивают увеличение прочности внутренней конструкции аккумулятора. Высокий комфорт и безопасность (пламогаситель). Система „KAMINA” – центральная система удаления воздуха. Индикатор уровня зарядки аккумулятора. Полная гамма аккумуляторов к легковым автомобилям. Эргономичные ручки. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/autopart-galaxy-silver.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>GALAXY SILVER</h3>
+                                                <p>Превосходные параметры запуска. Положительные и отрицательные электроды в аккумуляторах для легковых машин сделаны из кальциево-серебряного сплава в технологии резки-растяжки. Уменьшенный эффект саморазрядки. Уменьшенный расход воды во время эксплуатации. Высокий комфорт и безопасность (пламогаситель и газоотвод). Индикатор уровня зарядки. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/autopart-galaxy-plus-heavy-duty.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>GALAXY PLUS HEAVY DUTY</h3>
+                                                <p>Для грузовых машин с двигателями большой мощности, снабженных дополнительным оборудованием, которые употребляет электрическую энергию. Высокая виброустойчивость и защита от толчков благодаря применению синтетического волокна и стабилизации пакетов. Полная гамма аккумуляторов для грузовых автомобилей. Для транспортных средств, которые проезжают большие расстояния, например в международном транспорте. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section akb-zavod-->
+                                <!--start DIRECTION section akb-inci-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="akb-inci">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/inci-6ct-60-aze-supra.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>INCI 6СТ-60 АзЕ SuprA</h3>
+                                                <p>«SuprA» является полугерметичной аккумуляторной батареей, которая подходит для всех типов транспортных средств и представлена в широком ассортименте. «Supr A» полностью соответствует требованиям производителей автомобилей. Благодаря специальной конструкции крышки АКБ и технологии пластин Ca-Ca Exmet, «SuprA» характеризуется минимальной потерей воды и электролита, а так же высокой энергоемкостью, надежным запуском и долгим сроком службы.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/inci-6ct-77-aze-nanogold.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>INCI 6СТ-77 АзЕ NanoGold</h3>
+                                                <p>Серия аккумуляторов NanoGold разработана специально для автомобилей верхнего сегмента и машин с технологией старт-стоп. В дополнение к высококачественным усиленным пластинам благодаря специальной формуле пасты, подготовленной при использовании нанокристаллической технологии, обеспечит новому поколению автомобилей, потребляющих большое количество электроэнергии, сверхдолгий срок службы и увеличенную производительность.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section akb-inci-->
+                                <!--start DIRECTION section akb-bosch-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="akb-bosch">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/bosh-s6-agm-s5-agm.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Bosch S6 AGM &#92; S5 AGM</h3>
+                                                <p>Новые аккумуляторы Bosch S6 AGM HighTec, (S5 AGM) изготовленные по технологии AGM (Absorbent Glass Mat), гарантируют выполнение данных требований день за днем. Благодаря нетекучему электролиту аккумулятор Bosch S6 AGM HighTec (S5 AGM) обладает экстремальной устойчивостью к циклам заряда/разряда и уникальной долговечностью. Кроме того, эти аккумуляторы являются абсолютно необслуживаемыми, обладают 100%-ой герметичностью и экстремальной виброустойчивостью.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/bosh-s5-efb-12v.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Bosch S5 EFB &#92; 12V</h3>
+                                                <p>Технология EFB предполагает погружение электродов, помещенных в конверты из микроскопического волокна, в электролит. Это позволяет удерживать на поверхности активные компоненты, что автоматически приводит к увеличению срока службы и устойчивости АКБ к многократной разрядке и зарядке. Авто аккумуляторы BOSCH S5 EFB характеризуются высокой мощностью пускового тока, отличаются высоким качеством исполнения и длительным сроком эксплуатации.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/bosh-s3-12v.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Bosch S3 &#92; 12V</h3>
+                                                <p>Основные преимущества аккумуляторов BOSCHS3 заключаются в доступной цене, долговечности и надежности. BOSCH S3 — это прагматичный выбор традиционных технологий в сочетании с истинно немецким качеством. Не смотря на доступной цену, АКБ BOSCH S3 способен обеспечить надежный пуск двигателя на протяжении всего срока эксплуатации.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section akb-zavod-->
                             </div>
+                            <!--// END AKB-->
                         </div>
-                        <!--// end first content-->
-                        <!--second tab content-->
-                        <div role="tabpanel" class="tab-pane" id="oil"> 2222222222222222222222222 </div>
-                        <!--// endsecond tab content-->
-                        <!--                        third tab content-->
-                        <div role="tabpanel" class="tab-pane" id="autodetails"> 33333333333333333333333333 </div>
-                        <!--                        fourth tab content-->
-                        <div role="tabpanel" class="tab-pane" id="wheels"> 4444444444444444444 </div>
+                        <!-- // end AKB content-->
+                        <!--second OIL content-->
+                        <div role="tabpanel" class="tab-pane fade in" id="oil">
+                            <ul id="tab-oil" class="nav nav-tabs nav-stacked scor-nav-tabs-inner">
+                                <li><a href="#oil-repsol" class="noscroll" data-toggle="tab">Respol</a></li>
+                                <li><a href="#oil-liqui" class="noscroll" data-toggle="tab">Liqui Moly</a></li>
+                                <li class="active"><a href="#oil-motul" class="noscroll" data-toggle="tab">Motul</a></li>
+                                <li><a href="#oil-aral" class="noscroll" data-toggle="tab">Aral</a></li>
+                                <li><a href="#oil-zic" class="noscroll" data-toggle="tab">zic</a></li>
+                                <li><a href="#oil-shell" class="noscroll" data-toggle="tab">shell</a></li>
+                                <li><a href="#oil-castrol" class="noscroll" data-toggle="tab">Castrol</a></li>
+                                <li><a href="#oil-mobil" class="noscroll" data-toggle="tab">Mobil</a></li>
+                                <li><a href="#oil-orig" class="noscroll" data-toggle="tab">Оригинальные масла для всех видов авто</a></li>
+                            </ul>
+                            <div id="content-oil" class="tab-content scor-tab-inner-content">
+                                <!--start DIRECTION section oil-repsol-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="oil-repsol">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <blockquote>Официальный дистрибьютор в Херсонской области</blockquote>
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/repsol-elite-prado-0w20.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>REPSOL ELITE PRADO 0W20</h3>
+                                                <p>REPSOL Elite Prado является передовым топливо экономичным моторным маслом, основанным на синтетической технологии. Снижающие трение свойства продукта повышают отдачу и эффективность двигателя и обеспечивают улучшенную экономичность.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/repsol-elite-neo-5w20.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>REPSOL ELITE NEO 5W20</h3>
+                                                <p>Синтетическое моторное масло REPSOL ELITE NEO 5W20 на основе 3E технологии. Масло для бензиновых двигателей, благодаря своей низкой вязкости, обеспечивает экономию топлива при нормальных условиях движения, что приводит к снижению выбросов CO2 в атмосферу и снижение воздействия на окружающую среду.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--start DIRECTION section oil-repsol-->
+                                <!--END DIRECTION section oil-liqui-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="oil-liqui">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <blockquote>Официальный партнер компании Liqui moly</blockquote>
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/l-m-synthoil-sae-0w-30.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Synthoil Longtime SAE 0W-30</h3>
+                                                <p>Уникальное энергосберегающее, полностью синтетическое, всесезонное моторное масло для бензиновых и дизельных двигателей, в том числе с турбонаддувом. Максимально эффективно защищает двигатель от износа, особенно при холодном запуске, за счет мгновенного достижения самых удаленных точек смазывания. Протестировано на совместимость с катализаторами. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/l-m-molygen-10w-40.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Molygen New Generation 10W-40</h3>
+                                                <p>Высокопроизводительное моторное масло легкого хода для всесезонного применения. Нестандартные базовые масла, самые современные присадки и специальный компонент Молиген позволили получить низковязкое высокостабильное моторное масло, эффективно предотвращающее отложения, снижающее потери на трение и оптимально защищающее от износа. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/nova-super-sae-15w-40.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Nova Super SAE 15W-40</h3>
+                                                <p>Универсальное всесезонное моторное масло для бензиновых и дизельных двигателей. Отлично защищает от износа и обеспечивает надежное смазывание всех деталей, благодаря высокому содержанию присадок, имеет низкий расход на угар и предотвращает образование отложений и шламов внутри двигателя. Подходит для двигателей с турбонаддувом и без. Проверено на совместимость с катализатором.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section oil-liqui-->
+                                <!--END DIRECTION section oil-liqui-->
+                                <div class="tab-pane scor-tab-inner-pane fade in active" id="oil-motul">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/motul-3000-4t-20w-50.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>3000 4T 20W-50</h3>
+                                                <p>Моторное масло для 4-х тактных мотоциклов. Соответствует требованиям Harley-Davidson®. Обеспечивает защиту двигателя и коробки переключения передач. Соответствует требованиям JASO MA2, что обеспечивает четкость работы сцепления в масляной ванне. Совместимо с системами нейтрализации отработавших газов.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/motul-bio-2t.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>BIO 2T</h3>
+                                                <p>Биоразлагаемое высокотехнологичное масло для 2-х тактных двигателей для предварительного смешивания или непосредственного впрыска. 100% синтетика на основе сложных эфиров с пониженной дымностью. Предназначено для любых мотоциклов, в т.ч. внедорожных, и гоночных, мотороллеров, квадроциклов, садовой техники, бензопил. Оснащенных высокотехнологичным двухтактным двигателем, работающим с большими оборотами в тяжелых условиях.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/motul-100-2t.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>100 2T</h3>
+                                                <p>Моторное масло для 2-х тактных мотоциклов и мопедов. Применяется в предварительно подготовленной смеси или системах автоматической подачи масла в топливо. Смешивается со всеми видами бензина. Совместимо с системами нейтрализации отработавших газов.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section oil-motul-->
+                                <!--END DIRECTION section oil-motul-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="oil-aral">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/aral-supertronic-sae-0w-40.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Aral SuperTronic SAE 0W-40</h3>
+                                                <p>Полностью синтетическое моторное масло, флагман в линейке Aral Tronic. SuperTronic SAE 0W-40 обладает непревзойденными низкотемпературными свойствами и очень высокой термостабильностью, отлично подходит для самых современных дизельных двигателей Merecedes-Benz и BMW, оснащенных сажевыми фильтрами DPF и соответствующих нормам Euro V, Euro VI.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/aral-supersynth-sae-0w-40.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Aral SuperSynth SAE 0W-40</h3>
+                                                <p>ФРГ - единственная страна в мире, где скорость на автобанах не ограничена. Рай для любителей скорости. Но там прекрасно понимают, что скорость - это ответственность. Речь и о культуре вождения, и о состоянии дорог, и об ответственности инженеров по поводу технического уровня автомобилей. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/aral-megaturboral-la-sae-10w-40.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Aral MegaTurboral LA SAE 10W-40</h3>
+                                                <p>Полусинтетическое низкозольное моторное масло высшего класса для современных двигателей тяжелых грузовых автомобилей, оснащенных системами рециркуляции отработанных газов EGR и сажевыми фильтрами DPF. Изготовлено по технологии Aral-синтеза с формулой защиты двигателя Aral XMF (eXTra-Motorschutz-Formel).</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section oil-aral-->
+                                <!--END DIRECTION section oil-aral-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="oil-zic">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/zic-top-5w-30.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>ZIC TOP 5W-30</h3>
+                                                <p>Благодаря применению инновационных компонентов, разработанных компанией SK Lubricants , обладает увеличенным ресурсом и стабильностью свойств. Специально разработано и рекомендуется к применению в бензиновых и дизельных двигателях автомобилей производства Volkswagen AG , в том числе с сажевыми фильтрами и каталитическими нейтрализаторами, где требуется моторное масло со спецификацией VW 504.00/507.00.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/zic-x7-fe-0w-20.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>ZIC X7 FE 0W-20</h3>
+                                                <p>Предназначено для применения в бензиновых автомобильных двигателях, производители которых рекомендуют использовать моторные масла, соответствующие спецификациям API SN, ILSAC GF-5 и более ранних, классов вязкости SAE 0W-20 и 5W-20.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/zic-x5-20w-50.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>ZIC X5 20W-50 </h3>
+                                                <p>Изготовлено с использованием собственного базового масла YUBASE и пакета современных присадок. Обладает хорошей антиокислительной стабильностью. Разработано специально для регионов с жарким климатом.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section oil-zic-->
+                                <!--END DIRECTION section oil-zic-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="oil-shell">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <blockquote>Официальный партнер компании Shell</blockquote>
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/shell-helix-ultra-ect-c2-c3-0w-30.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>SHELL HELIX ULTRA ECT C2/C3 0W-30</h3>
+                                                <p>Новейшее в линейке высококачественных синтетических моторных масел, оно доказало свою способность улучшать характеристики двигателя как никогда раньше. Благодаря технологии Emission Compatible Technology (ECT), совместимой с системами снижения токсичности выхлопов, масло Shell Helix Ultra ECT C2/C3 помогает сохранять современные дизельные и бензиновые двигатели свободными от грязи и отложений.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section oil-shell-->
+                                <!--END DIRECTION section oil-shell-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="oil-castrol">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/castrol-magnatec-10w-40-r.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Castrol MAGNATEC 10W-40 R</h3>
+                                                <p>Уникальная формула Castrol MAGNATEC 10W-40 R обеспечивает защиту двигателя с первой секунда пуска, что резко сокращает его износ. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/l-m-molygen-10w-40.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Molygen New Generation 10W-40</h3>
+                                                <p>Высокопроизводительное моторное масло легкого хода для всесезонного применения. Нестандартные базовые масла, самые современные присадки и специальный компонент Молиген позволили получить низковязкое высокостабильное моторное масло, эффективно предотвращающее отложения, снижающее потери на трение и оптимально защищающее от износа. </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section oil-castrol-->
+                                <!--END DIRECTION section oil-castrol-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="oil-mobil">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/mobil-1-esp-x2-0w-20.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Mobil 1 ESP x2 0W-20</h3>
+                                                <p>Масло Mobil 1 ESP x2 0W-20 было разработано экспертами компании для продления срока службы и поддержания эффективности систем снижения токсичности выхлопных газов новых европейских автомобилей, оборудованных как дизельными, так и бензиновыми двигателями, в которых требуется применение масел класса вязкости SAE 0W-20.* По сравнению с Mobil 1 ESP Formula 5W-30.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section oil-mobil-->
+                                <!--END DIRECTION section oil-mobil-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="oil-orig">
+                                </div>
+                                <!--//end DIRECTION section oil-orig-->
+                            </div>
+                            <!--// END oil-->
+                        </div>
+                        <!-- // endsecond OIL content-->
+                        <!--  PARTS tab content-->
+                        <div role="tabpanel" class="tab-pane fade in" id="autodetails">
+                            <ul id="tab-parts" class="nav nav-tabs nav-stacked scor-nav-tabs-inner">
+                                <li><a href="#part-filter" class="noscroll" data-toggle="tab">Фильтра</a></li>
+                                <li><a href="#microbus" class="noscroll" data-toggle="tab">Для микроавтобусов</a></li>
+                                <li class="active"><a href="#japancars" class="noscroll" data-toggle="tab">Для Корейских и Японских автомобилей</a></li>
+                                <li><a href="#eurocars" class="noscroll" data-toggle="tab">Для европейских автомобилей</a></li>
+                                <li><a href="#daewoo" class="noscroll" data-toggle="tab">Группа Daewoo</a></li>
+                                <li><a href="#autoprom" class="noscroll" data-toggle="tab">Отечественный автопром</a></li>
+                            </ul>
+                            <div id="content-parts" class="tab-content scor-tab-inner-content">
+                                <!--start DIRECTION section part-filter-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="part-filter">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/mahle-original.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>MAHLE Original</h3>
+                                                <p>Эта марка компании MAHLE охватывает детали для двигателей и фильтром с бескомпромиссным качеством, как для первичного оснащения, так и для запасных частей. За мощностью этой марки кроется концерн, работающий на рынках во всем мире, располагающий инновационными мощностями в области исследований и разработок, а также эффективной сетью международных производственных объектов и обеспечивающий высококачественной продукцией рынок комплектующих для автомобилей - и все это MAHLE.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/knecht.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Knecht</h3>
+                                                <p>Knecht уже десятки лет является частью семейства брендов MAHLE. Этот специалист в области фильтров обладает высокой ценностью бренда в Европе и эффективной системой удержания клиентов.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/mann-hummel.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>MANN-HUMMEL</h3>
+                                                <p>Если Вы хотите обезопасить себя при выборе масляного фильтра, выберите MANN-FILTER. Они разработаны для современных высокопроизводительных масел и могут не спасовать даже перед наиболее ответственными техническими задачами. Поскольку области применения масляных фильтров и предъявляемых к ним требований меняются, масляные фильтры MANN-FILTER существуют в различных конструкциях.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section part-filter-->
+                                <!--start DIRECTION section part-filter-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="microbus">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Фильтра DUCATO</h3>
+                                                <p>Описание</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Тормозная система DUCATO</h3>
+                                                <p>Описание </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Подвеска DUCATO</h3>
+                                                <p>Описание </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Фильтра MAXUS</h3>
+                                                <p>Описание </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Электрика MAXUS</h3>
+                                                <p>Описание </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Кузовные детали &#92; Оптика MAXUS</h3>
+                                                <p>Описание </p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-2" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section part-filter-->
+                                <!--start DIRECTION section part-filter-->
+                                <div class="tab-pane scor-tab-inner-pane fade in active" id="japancars">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Описание</h3>
+                                                <p>Описание</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section part-filter-->
+                                <!--start DIRECTION section part-filter-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="eurocars">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Описание</h3>
+                                                <p>Описание</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section part-filter-->
+                                <!--start DIRECTION section part-filter-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="daewoo">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Описание</h3>
+                                                <p>Описание</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section part-filter-->
+                                <!--start DIRECTION section part-filter-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="autoprom">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/fake.gif" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Описание</h3>
+                                                <p>Описание</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section part-filter-->
+                            </div>
+                            <!--// END parts-->
+                        </div>
+                        <!-- // PARTS tab content-->
+                        <!-- // TEARS tab content-->
+                        <div role="tabpanel" class="tab-pane" id="wheels">
+                            <ul id="tab-tears" class="nav nav-tabs nav-stacked scor-nav-tabs-inner">
+                                <li><a href="#tears-rosava" class="noscroll" data-toggle="tab">Росава</a></li>
+                                <li class="active"><a href="#tears-hankook" class="noscroll" data-toggle="tab">Hankook</a></li>
+                                <li><a href="#tears-continental" class="noscroll" data-toggle="tab">Continental</a></li>
+                            </ul>
+                            <div id="content-tears" class="tab-content scor-tab-inner-content">
+                                <!--start DIRECTION section tears-rosava-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="tears-rosava">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/rosava-premiorri-solazo.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Premiorri Solazo</h3>
+                                                <p>Уникальный состав резин с кремнекислотным наполнителем Silica Ultrasil 7000 GR в протекторе обеспечивает великолепное сцепление с дорожным покрытием в жару и ливень, высокую износостойкость протектора и экономию топлива. Усиленное центральное ребро. Обеспечивает отличную курсовую устойчивость, высокую маневренность и безопасность движения автомобиля на высоких скоростях.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section tears-rosava-->
+                                <!--start DIRECTION section tears-hankook-->
+                                <div class="tab-pane scor-tab-inner-pane fade in active" id="tears-hankook">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/hankook-ventus-s1-evo2.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>Ventus S1 evo2</h3>
+                                                <p>Ventus S1 evo2 представляет собой высокоэффективную шину премиум-класса, которая обеспечивает точный контроль при прохождении поворотов на высоких скоростях и отличается высокой экологичностью за счет низкого сопротивления качению и оптимального профиля.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section tears-hankook-->
+                                <!--start DIRECTION section tears-continental-->
+                                <div class="tab-pane scor-tab-inner-pane fade in" id="tears-continental">
+                                    <!--start card product-->
+                                    <div class="product-card col-md-12">
+                                        <div class="row">
+                                            <div class="product-img col-md-2 col-sm-4"><img src="img/product/continental-premiumcontact-6.jpg" alt="" class="center-block img-responsive"></div>
+                                            <div class="product-description col-md-10 col-sm-8">
+                                                <h3>PremiumContact 6</h3>
+                                                <p>Максимальные характеристики торможения на влажном покрытии и увеличенная ходимость благодаря безопасным составам резиновой смеси на основе диоксида кремния. Соединения кристаллического кремния в составе смесей для беговой дорожки и подканавочного слоя протектора обеспечивают превосходные характеристики торможения особенно на мокром дорожном покрытии. Характеристики безопасности сохранились на самом высоком уровне при этом ресурс шины значительно увеличился.</p>
+                                            </div>
+                                            <div class="col-md-12 col-xs-12 character">
+                                                <button class="btn btn-lg center-block character-btn btn-primary hidden" type="button" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">характеристики</button>
+                                            </div>
+                                        </div>
+                                        <hr> </div>
+                                    <!--//end card product-->
+                                </div>
+                                <!--//end DIRECTION section tears-continental-->
+                            </div>
+                            <!--// END tears-->
+                        </div>
+                        <!-- // TEARS tab content-->
                     </div>
                 </div>
             </div>
@@ -325,17 +1175,18 @@
     <div class="container-fluid fourth-screen">
         <section class="container delivery-block">
             <h2 class="section-heading heading-lighten"><span>Д</span>оставка</h2>
-            <article class="col-md-10 col-md-offset-1 delivery-article">
+            <article class="col-md-10 col-md-offset-1 col-xs-12 delivery-article">
                 <p>При покупке товара на сумму свыше <span>500</span> гривен
                     <br> - бесплатная доставка&#42;</p>
             </article>
-            <div class="col-xs-4 col-xs-offset-1 divider-delivery">
+            <div class="col-md-4 hidden-xs col-xs-offset-1 divider-delivery">
                 <hr> </div>
-            <div class="col-xs-2 icon-delivery"><i class="garage-delivery"></i></div>
-            <div class="col-xs-4 divider-delivery">
+            <div class="col-md-2 col-xs-12 icon-delivery"><i class="garage-delivery"></i></div>
+            <div class="col-md-4 hidden-xs divider-delivery">
                 <hr> </div>
-            <div class="col-md-4 col-md-offset-7 clarification">
-                <p>&#42;График доставки уточняйте у менеджера. Доставка осуществляется в пределах
+            <div class="col-md-4 col-md-offset-7 col-sm-8 col-sm-offset-4 col-xs-12 clarification">
+                <p>&#42;График доставки уточняйте у менеджера.
+                    <br>Доставка осуществляется в пределах
                     <br>транспортной доступности &#40;15км&#41;. </p>
             </div>
         </section>
@@ -349,45 +1200,44 @@
             <h4 class="gallery-description"><span>Ф</span>ото работ в нашем СТО</h4>
             <div class="row galery-content">
                 <div class="col-xs-12 col-sm-6 col-md-3 gallery-thumb">
-                    <a href="img/galery/galery-fullsize-1.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="заголовок фото-1"><img src="img/galery/galery-thumb-1.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="title-1"><img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
+                    <a href="img/galery/galery-fullsize-1.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="СТО ГАРАЖ"> <img src="img/galery/galery-thumb-1.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="СТО ГАРАЖ"> <img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 gallery-thumb">
-                    <a href="img/galery/galery-fullsize-2.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="заголовок фото-2"><img src="img/galery/galery-thumb-2.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="title-2"><img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
+                    <a href="img/galery/galery-fullsize-2.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="СТО ГАРАЖ"> <img src="img/galery/galery-thumb-2.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="СТО ГАРАЖ"> <img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 gallery-thumb">
-                    <a href="img/galery/galery-fullsize-3.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="заголовок фото-3"><img src="img/galery/galery-thumb-3.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="title-3"><img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
+                    <a href="img/galery/galery-fullsize-3.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="СТО ГАРАЖ"> <img src="img/galery/galery-thumb-3.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="СТО ГАРАЖ"> <img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-3 gallery-thumb">
-                    <a href="img/galery/galery-fullsize-4.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="заголовок фото-4"><img src="img/galery/galery-thumb-4.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="title4"><img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
+                    <a href="img/galery/galery-fullsize-4.jpg" data-toggle="lightbox" data-gallery="garage-gallery" data-title="СТО ГАРАЖ"> <img src="img/galery/galery-thumb-4.jpg" alt="" class="img-responsive center-block img-rounded img-thumb" title="СТО ГАРАЖ"> <img class="img-responsive center-block img-rounded scor-img-bg" src="img/galery/color-plash.png" alt=""></a>
                 </div>
             </div>
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 galery-phone">
-                <p>Записаться на СТО можно по телефону <span>099-154-67-89</span></p>
+                <p>Записаться на СТО можно по телефону <span>050-494-99-29</span></p>
                 <hr id="contacts"> </div>
         </section>
     </div>
     <!--.conacts-block-->
     <section class="container contact-block">
-        <div class="col-md-6 col-lg-5 contact-content">
-            <h3 class="col-md-11 col-md-offset-2">Наши контакты</h3>
-            <div class="adress-row"> <i class="garage-marker col-md-2"></i>
-                <p class="col-sm-10">Херсон, Николаевское шоссе, Николаевское шоссе, 5-й км.</p>
+        <div class="col-lg-5 col-md-6 col-sm-8 col-sm-offset-2 col-md-offset-0 contact-content">
+            <h3 class="col-md-11 col-md-offset-2 col-sm-12">Наши контакты</h3>
+            <div class="adress-row"> <i class="garage-marker col-md-2 col-sm-2 col-xs-3"></i>
+                <p class="col-sm-10 col-xs-9">Херсон, Николаевское шоссе, <br>5-й км. Авторынок</p>
             </div>
-            <div class="adress-row"> <a href="mailto:garage-kherson@gmail.com" class="mail-link"><i class="garage-mail col-md-2"></i><p class="col-sm-10">garage-kherson@gmail.com</p></a> </div>
-            <div class="adress-row"> <i class="garage-phone col-md-2"></i>
-                <p class="col-sm-10">099-154-67-89, 063-154-67-89</p>
+            <div class="adress-row"> <a href="mailto:0975775771@mail.ru" class="mail-link"><i class="garage-mail col-md-2 col-sm-2 col-xs-3"></i>
+                <p class="col-sm-10 col-xs-9">0975775771@mail.ru</p></a> </div>
+            <div class="adress-row"> <i class="garage-phone col-md-2 col-sm-2 col-xs-3"></i>
+                <p class="col-sm-10 col-xs-9">(050)-327-97-97<br>(095)-277-57-71<br><span>(097)-577-57-71</span></p>
             </div>
-            <div class="adress-row"> <i class="garage-clock-fat col-md-2"></i>
-                <p class="col-sm-10">Вт-Вс, с 9<sup>00</sup> до 16<sup>00</sup></p>
+            <div class="adress-row"> <i class="garage-clock-fat col-md-2 col-sm-2 col-xs-3"></i>
+                <p class="col-sm-10 col-xs-9">Пн-Пт, с 8<sup>00</sup> до 18<sup>00</sup><br><span class="weekend">Сб-Вс, с 8<sup>00</sup> до 15<sup>00</sup></span></p>
             </div>
         </div>
     </section>
     <!--/.conacts-block-->
     <!--.scor-map-->
     <div class="container-fluid scor-map">
-        <div class="map-wrapper">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AWQgHcQAo74FtjVrPquwXk5KEJcgxzGd_&amp;width=100%25&amp;height=596&amp;lang=ru_UA&amp;scroll=true"></script>
-        </div>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AWQgHcQAo74FtjVrPquwXk5KEJcgxzGd_&amp;width=100%25&amp;height=596&amp;lang=ru_UA&amp;scroll=false"></script>
         <!--/.map-wrapper-->
     </div>
     <!--/.scor-map-->
@@ -397,39 +1247,39 @@
             <h2 class="section-heading heading-lighten"><span>Н</span>аша команда</h2>
             <div class="container">
                 <div class="team-slider">
-                    <div class="col-md-4"> <img src="img/team/tm1.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm1.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Хорошев<br>Александр</h3>
                         <p class="teamer-seat">Старший менеджер</p>
                     </div>
-                    <div class="col-md-4"> <img src="img/team/tm2.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm2.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Синолуп<br>Владимир</h3>
                         <p class="teamer-seat">Начальник отдела продаж</p>
                     </div>
-                    <div class="col-md-4"> <img src="img/team/tm3.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm3.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Бабич<br>Виталий</h3>
                         <p class="teamer-seat">Директор по развитию</p>
                     </div>
-                    <div class="col-md-4"> <img src="img/team/tm4.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm4.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Романович<br>Роман</h3>
                         <p class="teamer-seat">Старший менеджер</p>
                     </div>
-                    <div class="col-md-4"> <img src="img/team/tm5.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm5.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Рыженко<br>Денис</h3>
                         <p class="teamer-seat">Менеджер по продажам</p>
                     </div>
-                    <div class="col-md-4"> <img src="img/team/tm6.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm6.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Сибилев<br>Александр </h3>
                         <p class="teamer-seat">Оператор складских территорий</p>
                     </div>
-                    <div class="col-md-4"> <img src="img/team/tm7.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm7.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Куликов<br>Марк</h3>
                         <p class="teamer-seat">Старший аналитик отдела закупок</p>
                     </div>
-                    <div class="col-md-4"> <img src="img/team/tm8.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm8.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Письменный<br>Олег</h3>
                         <p class="teamer-seat">Оператор складских территорий</p>
                     </div>
-                    <div class="col-md-4"> <img src="img/team/tm9.jpg" alt="" class="img-responsive img-circle center-block">
+                    <div class="col-md-4 col-sm-6"> <img src="img/team/tm9.jpg" alt="" class="img-responsive img-circle center-block">
                         <h3 class="teamer-name">Яковец<br>Владислав</h3>
                         <p class="teamer-seat">Менеджер по продажам</p>
                     </div>
@@ -441,17 +1291,15 @@
     <!--    /.team-block-->
     <footer class="container-fluid">
         <div class="container footer-content">
-            <div class="col-md-4 footer-logo-block"> <img src="img/logo-bottom.png" alt="" class="img-responsive">
+            <div class="col-md-4 col-sm-4 col-xs-12 footer-logo-block"> <img src="img/logo-bottom.png" alt="" class="img-responsive">
                 <p>авто запчасти</p>
             </div>
-            <div class="col-md-4">
-                <p>Херсон, Николаевское шоссе,
-                    <br>Николаевское шоссе, 5-й км.</p>
-                <p>тел. 099-154-67-89
-                    <br>063-154-67-89</p>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <p>Херсон, Николаевское шоссе,<wbr> 5-й км., Авторынок</p>
+                <p>(050)-327-97-97<br>(095)-277-57-71<br>(097)-577-57-71</p>
             </div>
-            <div class="col-md-4 footer-legal">
-                <p class="legal-link" data-toggle="modal" data-target="#modal-character-acc-1" data-backdrop="true">Правовая информация</p> <a class="link-dev" href="">Сайт разработан<br><span>Scor Davis</span></a> </div>
+            <div class="col-md-4 col-sm-4 col-xs-12 footer-legal">
+                <p class="legal-link" data-toggle="modal" data-target="#modal-police" data-backdrop="true">Правовая информация</p> <a class="link-dev" href="http://scordavis.ru/?utm_source=donework&utm_medium=bootstrap&utm_term=garage_kherson&utm_content=footer">Сайт разработан<br><span>Scor Davis</span></a> </div>
         </div>
     </footer>
     <!-- modals -->
@@ -604,6 +1452,46 @@
     </div>
     <!--//modal-character-acc-3-->
     <!--//car-recharges-->
+    
+    <!--modal-police-->
+    <div class="modal fade" id="modal-police" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg card-product-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-card-heading">Политика конфиденциальности</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">закрыть</span></button>
+                </div>
+                <div class="modal-body">
+                    <h3>Возможнен сбор информации</h3>
+                    <p>При оставлении заявки на ресурсе промо-страницы «Гараж-Херсон» клиенты предоставляют следующую сведения:</p>
+                    <ul>
+                        <li>Имя</li>
+                        <li>Контактный E-mail (по желанию).</li>
+                        <li>Контактный телефон (обязательно).</li>
+                    </ul>
+                    <p>Также, с помощью сервисов статистики, администрация сайта получает данные об IP-адресе посетителей, а также о типе браузера, времени нахождения на сайте и прочие подобные сведения.</p>
+                    <h3>Использование информации</h3>
+                    <p>Вся полученная информация используется администрацией сайта «Гараж-Херсон» исключительно в целях связи с клиентом. Сайт «Гараж-Херсон» имеет право направлять клиенту информационные сообщения (новостную рассылку), <b>если</b> он подписался на них.</p>
+                    <h3>Защита персональных данных</h3>
+                    <p>Промо-страница «Гараж-Херсон» обязуется не разглашать сведения, полученные от клиентов. Она хранится в базе данных на локальном компьютере администрации сайта. Доступ к компьютеру надёжно защищён паролем, который имеется только у администратора сайта.</p>
+                    <h3>Предоставление данных третьим лицам</h3>
+                    <p>Полученные сведения не могут быть переданы третьим лицам, за исключением следующих случаев:</p>
+                    <ul>
+                        <li>Для исполнения обязательств перед клиентом – только с его разрешения.</li>
+                        <li>В соответствии с обоснованными и применимыми требованиями закона.</li>
+                    </ul>
+                    <h3>Контакты</h3>
+                    <p>По всем вопросам вы можете обращаться к администрации сайта.</p>
+                    <ul>
+                        <li>Телефон: 099-154-67-89</li>
+                        <li>E-mail: garage-kherson@gmail.com</li>
+                    </ul>
+                    <p><i>Настоящая редакция политики конфиденциальности опубликована 18 апреля 2017 года.</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//modal-police-->
     <!-- //.modal -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -613,64 +1501,25 @@
     <!--   init AOS-->
     <script>
         AOS.init();
+
     </script>
-    <script src="js/hovertips.js"></script>
+    <!--    <script src="js/scor-script.js"></script>-->
     <!--anim slider-->
-    <script src="js/slider.js"></script>
+    <script defer src="js/slider.js"></script>
     <!--    slick slider feedback-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    <!--   init feedback slick slider-->
-    <script>
-        $(document).ready(function () {
-            $('.feedback-slider').slick();
-        });
-    </script>
-    <!--    init team slick slider-->
-    <script>
-        $('.team-slider').slick({
-            infinite: true
-            , dots: false
-            , slidesToShow: 3
-            , slidesToScroll: 1
-        });
-    </script>
+
+
     <!--   Bootstrap js-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!--    bootstrap tabCollapse js-->
     <script src="js/bootstrap-tabcollapse.js"></script>
-    <!--    init bootstrap tabCollapse js-->
-    <script type="text/javascript">
-        $('#scorinnertabs').tabCollapse({
-            tabsClass: 'hidden-xs'
-            , accordionClass: 'visible-xs'
-        });
-    </script>
+
     <!--    include bootstrap lightbox script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
-    <!--init bootstrap lightbox script-->
-    <script>
-        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-            event.preventDefault();
-            $(this).ekkoLightbox({
-                alwaysShowClose: true
-            });
-        });
-    </script>
-    <!--    scroller script-->
-    <script>
-        $('a[href*="#"]:not([href="#"]):not(.noscroll)').click(function () {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    </script>
+        <script src="js/common.js"></script>
+
+
 </body>
 
 </html>
